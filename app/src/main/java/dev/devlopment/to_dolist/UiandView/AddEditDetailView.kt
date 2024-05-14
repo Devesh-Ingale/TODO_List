@@ -183,6 +183,7 @@ fun WishTextField(
             )
         },
         colors =TextFieldDefaults.textFieldColors(
+            disabledTextColor = Color.Black,
             focusedTextColor = Color(0xFFF86B3F),
             unfocusedLabelColor = Color(0xFFF86B3F),
             focusedLabelColor = Color(0xFFF86B3F),

@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.DismissDirection
 import androidx.compose.material.DismissValue
@@ -165,7 +166,8 @@ fun WishItem(wish: Wish, onClick: () -> Unit){
             onClick()
         },
         elevation = 10.dp,
-        backgroundColor = surfaceColor
+        backgroundColor = surfaceColor,
+        shape = RoundedCornerShape(30.dp)
     ) {
         Column(modifier = Modifier.padding(16.dp)){
             Text(
