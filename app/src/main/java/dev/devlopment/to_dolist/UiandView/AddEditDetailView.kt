@@ -126,7 +126,12 @@ fun AddEditDetailView(
                         },
                         modifier = Modifier.padding(end = 8.dp)
                     )
-                    Text("Completed", modifier = Modifier.clickable { completedCheckboxState.value = !completedCheckboxState.value })
+                    Text("Completed",
+                        modifier = Modifier.clickable {
+                            completedCheckboxState.value = !completedCheckboxState.value
+                        },
+                        color = Color(0xFFF86B3F)
+                    )
 
                     Checkbox(
                         checked = partiallyCompletedCheckboxState.value,
@@ -138,7 +143,12 @@ fun AddEditDetailView(
                         },
                         modifier = Modifier.padding(start = 16.dp)
                     )
-                    Text("Partially Completed", modifier = Modifier.clickable { partiallyCompletedCheckboxState.value = !partiallyCompletedCheckboxState.value })
+                    Text("Partially Completed",
+                        modifier = Modifier.clickable {
+                            partiallyCompletedCheckboxState.value = !partiallyCompletedCheckboxState.value
+                        },
+                        color = Color(0xFFF86B3F)
+                    )
                 }
             }
             Spacer(modifier = Modifier.height(10.dp))
