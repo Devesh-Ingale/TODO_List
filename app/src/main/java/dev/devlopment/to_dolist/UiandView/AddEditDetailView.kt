@@ -183,7 +183,8 @@ fun WishTextField(
             )
         },
         colors =TextFieldDefaults.textFieldColors(
-            disabledTextColor = Color.Black,
+            unfocusedTextColor = Color(0xFFF86B3F),
+            disabledTextColor = Color(0xFFF86B3F),
             focusedTextColor = Color(0xFFF86B3F),
             unfocusedLabelColor = Color(0xFFF86B3F),
             focusedLabelColor = Color(0xFFF86B3F),
@@ -269,7 +270,8 @@ fun GradientBorderButtonRound(
             else stringResource(id = R.string.add_wish),
             fontSize = 26.sp,
             modifier = Modifier.padding(paddingValues),
-            fontWeight = FontWeight.Medium
+            fontWeight = FontWeight.Medium,
+            color = Color(0xFFF86B3F)
         )
     }
 }
